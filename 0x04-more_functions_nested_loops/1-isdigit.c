@@ -1,18 +1,16 @@
-#include <ctype.h>
-#include "holberton.h"
+#include "main.h"
+
 /**
- * _isdigit - A function that checks for a digit.
- *
- * @c: is the character to  check
- *
- * Return: 1 if c is a digit otherwise 0
+ * _isdigit -  checks for checks for a digit (0 through 9).
+ * @c: c -  Variable
+ * Return: Always 0.
  */
 int _isdigit(int c)
 {
-	int a = isdigit(c);
 
-	if (a == 0)
-		return (a);
-	else
+	if (c >= 48 && c <= 57)
+	{
 		return (1);
+	}
+	return (0);
 }
